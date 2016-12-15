@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:text_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color_all"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_round_black_sale"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+           >
+
+            <ImageView
+                android:id="@+id/sale_loading"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_processing_transaction" />
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/process_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Initiliazing Payment"
+                android:textColor="@color/white"
+                text_view:textStyle1 = "Bold" />
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/process_condition_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Your request transaction is being proceed."
+                android:textColor="@color/dim_text" />
+        </LinearLayout>
+        <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+            android:id="@+id/cancel_sale"
+            android:background="@drawable/round_corner_rectangle_red"
+            android:stateListAnimator="@null"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:text="Cancel"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_round_dark"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/counter"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_progressbar" />
+
+                <TextView
+                    android:id="@+id/time_remaining_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_secondary_text"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                    android:id="@+id/time_mins_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text=" MINS"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_secondary_text"
+                    android:textSize="14dp"
+                    text_view:textStyle1="Bold"
+                  />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+              >
+
+                <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Time Remaining"
+                    android:textColor="@color/color_secondary_text"
+                    android:textSize="12dp"
+                    text_view:textStyle1="Regular"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_round"
+        android:orientation="vertical">
+
+        <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Summary"
+            android:textSize="18dp"
+            android:textColor="@color/color_primary_text"
+            text_view:textStyle1="Bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Receivable Amount : "
+                android:textSize="12dp"
+                android:textColor="@color/color_secondary_text"
+                text_view:textStyle1="Regular"/>
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPR 500.00"
+                android:textColor="@color/color_primary_text"
+                text_view:textStyle1="Bold"/>
+        </LinearLayout>
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/shadow"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:text="Transaction Status: "
+                android:textColor="@color/color_secondary_text"
+                text_view:textStyle1="Regular"/>
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive"
+                android:textColor="@color/color_primary_text"
+                text_view:textStyle1="Bold"/>
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/shadow"/>
+        <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+            android:layout_gravity="center"
+            android:text="Scan this code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_primary_text"
+            text_view:textStyle1="Regular"/>
+        <ImageView
+            android:id="@+id/merchant_qr"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/qpay_logo"/>
+    </LinearLayout>
+
+</LinearLayout>

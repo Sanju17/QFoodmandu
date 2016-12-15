@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:text_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Login Page -->
+        <LinearLayout
+            android:id="@+id/login_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/login_bg_drawable">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    text_view:textStyle1="Light"
+                    android:gravity="center"
+                    android:textSize="35sp"/>
+
+                <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                    android:id="@+id/restro_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    text_view:textStyle1="HeavyBold"
+                    android:gravity="center"
+                    android:textSize="37sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+             <!--   <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/login_section_divider"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColorHint="#ffffff">
+
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Username"
+                            android:textColorHint="#ffffff"
+                            android:inputType="text"
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColorHint="#ffffff">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="textPassword"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:paddingTop="16dip"
+                        android:paddingBottom="16dip"
+                        android:elevation="5dp"
+                        android:background="@drawable/default_login_btn_drawable"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- qrcode scanner layout -->
+        <LinearLayout
+            android:id="@+id/barcode_scanner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.journeyapps.barcodescanner.CompoundBarcodeView
+                android:id="@+id/barcode_scanner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.journeyapps.barcodescanner.CompoundBarcodeView>
+        </LinearLayout>
+
+        <!-- No internet Connection -->
+        <include layout="@layout/no_internet_connection_layout" />
+
+    </FrameLayout>
+
+</LinearLayout>

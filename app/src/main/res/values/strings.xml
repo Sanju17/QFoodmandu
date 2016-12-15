@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Qpay Foodmandu</string>
+    <string name="edittext_hint"><font style="normal" size="20">Enter Amount</font></string>
+</resources>

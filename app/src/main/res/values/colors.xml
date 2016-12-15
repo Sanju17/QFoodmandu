@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9B0101</color>
+    <color name="colorPrimaryDark">#ba0505</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Login -->
+    <color name="default_login_btn_bg">#de0000</color>
+    <color name="default_login_btn_bg_pressed">#CCde0000</color>
+    <color name="default_sales_btn_bg">#33b233</color>
+    <color name="default_sales_btn_bg_pressed">#CC33b233</color>
+    <color name="login_section_divider">#7F8181</color>
+    <color name="dim_text">#9a9a9a</color>
+    <color name="background_color_all">#ececec</color>
+    <color name="shadow_dark">#60696868</color>
+    <color name="color_secondary_text">#676767</color>
+    <color name="shadow">#60b9b7b7</color>
+    <color name="color_primary_text">#262525</color>
+    <color name="background_like_blace">#212229</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="black">#000000</color>
+
+</resources>

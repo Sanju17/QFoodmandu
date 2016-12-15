@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CUSTOM TEXT VIEW -->
+    <declare-styleable name="text_view">
+        <attr name="textStyle1">
+            <flag name="Thin" value="0"/>
+            <flag name="Light" value="1"/>
+            <flag name="Medium" value="2"/>
+            <flag name="Regular" value="3"/>
+            <flag name="Bold" value="4"/>
+            <flag name="Italic" value="5" />
+            <flag name="LightItalic" value="6"/>
+            <flag name="MediumItalic" value="7"/>
+            <flag name="BoldItalic" value="8"/>
+            <flag name="ThinItalic" value="9" />
+            <flag name="HeavyBold" value="10"/>
+        </attr>
+    </declare-styleable>
+</resources>

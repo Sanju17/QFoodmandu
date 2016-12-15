@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/history_item_wallet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QPay Wallet"
+                android:textSize="16dp"
+                text_view:textStyle1="Bold" />
+
+            <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+                android:id="@+id/history_item_date_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Dec 07,2016 7:37AM"
+                android:textColor="#bebbbb"
+                android:textSize="14dp"
+                text_view:textStyle1="Regular" />
+        </LinearLayout>
+
+        <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NPR "
+            android:textSize="16dp"
+            text_view:textStyle1="Bold" />
+
+        <np.com.qpay.qpayfoodmandu.customcomponent.LatoTextView
+            android:id="@+id/history_item_amount_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="500.50"
+            android:textSize="16dp"
+            text_view:textStyle1="Bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#efeded" />
+</LinearLayout>
